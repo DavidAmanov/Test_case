@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import sync_playwright
 
-@pytest.mark.parametrize(('element', 'screenshot_name'), [('.desktop-content-HDB3N', 'Header'), ('.desktop-impact-items-F7T6E', 'Cards')])
+@pytest.mark.parametrize(('element', 'screenshot_name'), [('.desktop-content-HDB3N', 'eco-impact-1'), ('.desktop-impact-items-F7T6E', 'eco-impact-2')])
 def test_screenshot(element, screenshot_name):
     with sync_playwright() as p:
         browser = p.chromium.launch()
